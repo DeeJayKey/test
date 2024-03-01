@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Osoba>
+
+    @foreach (var osoba in Model)
+    {
+    <p>@osoba.Imie @osoba.Nazwisko</p>
+    }
+
+    <a href="@Url.Action(" Dodaj")">Dodaj osobę</a>
